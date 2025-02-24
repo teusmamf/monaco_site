@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
-
+import '../index.css'
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -77,6 +77,7 @@ const Contact = () => {
             animate={{ opacity: 1, x: 0 }}
             onSubmit={handleSubmit}
             className="space-y-6"
+          
           >
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
@@ -88,7 +89,7 @@ const Contact = () => {
                 name="name"
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-[#595959]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea]"
+                className="w-full px-4 py-2 bg-[#595959]/10 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea] focus:border-white/60 transition duration-200"
                 required
               />
             </div>
@@ -103,7 +104,7 @@ const Contact = () => {
                 name="email"
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-[#595959]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea]"
+                className="w-full px-4 py-2 bg-[#595959]/10 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea] focus:border-white/60 transition duration-200"
                 required
               />
             </div>
@@ -118,7 +119,7 @@ const Contact = () => {
                 name="subject"
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-2 bg-[#595959]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea]"
+                className="w-full px-4 py-2 bg-[#595959]/10 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea] focus:border-white/60 transition duration-200"
                 required
               />
             </div>
@@ -133,7 +134,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 rows={6}
-                className="w-full px-4 py-2 bg-[#595959]/10 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea]"
+                className="w-full px-4 py-2 bg-[#595959]/10 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#0f41ea] focus:border-white/60 transition duration-200"
                 required
               ></textarea>
             </div>

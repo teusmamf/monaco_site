@@ -50,13 +50,16 @@ const Home = () => {
           <p className="text-xl md:text-2xl text-[#7c7c7c] mb-8">
             Transformamos sua presença digital com estratégias futuristas e execução criativa.
           </p>
+          <button className="btn_hero">
           <Link
             to="/contato"
-            className="inline-flex items-center px-8 py-3 bg-[#0f41ea] text-white rounded-full hover:bg-[#0f41ea]/90 transition-colors"
+            
           >
             Vamos Elevar Sua Marca
             <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
+           </button>
+          
         </motion.div>
       </section>
 
@@ -79,37 +82,52 @@ const Home = () => {
 
       {/* Services Preview */}
       <section className="py-20 bg-gradient-to-b from-[#040404] to-[#0f41ea]/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-6 bg-[#595959]/10 rounded-lg backdrop-blur-sm"
-            >
-              <Brain className="h-12 w-12 text-[#0f41ea] mb-4" />
-              <h3 className="text-xl font-bold mb-2">Estratégia Digital</h3>
-              <p className="text-[#7c7c7c]">Planos orientados por dados para navegar no cenário digital.</p>
-            </motion.div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Estratégia Digital */}
+          <motion.div whileHover={{ scale: 1.05 }} className="parent">
+            <div className="card">
+              <div className="glass"></div>
+              <div className="content">
+                <Brain className="h-12 w-12 text-[#0f41ea] mb-4" />
+                <h3 className="title">Estratégia Digital</h3>
+                <p className="text">
+                  Planos orientados por dados para navegar no cenário digital.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-6 bg-[#595959]/10 rounded-lg backdrop-blur-sm"
-            >
-              <Palette className="h-12 w-12 text-[#0f41ea] mb-4" />
-              <h3 className="text-xl font-bold mb-2">Desenvolvimento de Marca</h3>
-              <p className="text-[#7c7c7c]">Criando histórias de marca envolventes que ressoam.</p>
-            </motion.div>
+          {/* Desenvolvimento de Marca */}
+          <motion.div whileHover={{ scale: 1.05 }} className="parent">
+            <div className="card">
+              <div className="glass"></div>
+              <div className="content">
+                <Palette className="h-12 w-12 text-[#0f41ea] mb-4" />
+                <h3 className="title">Desenvolvimento de Marca</h3>
+                <p className="text">
+                  Criando histórias de marca envolventes que ressoam.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="p-6 bg-[#595959]/10 rounded-lg backdrop-blur-sm"
-            >
-              <Share2 className="h-12 w-12 text-[#0f41ea] mb-4" />
-              <h3 className="text-xl font-bold mb-2">Gestão de Mídias Sociais</h3>
-              <p className="text-[#7c7c7c]">Campanhas inovadoras para impulsionar sua presença online.</p>
-            </motion.div>
-          </div>
+          {/* Gestão de Mídias Sociais */}
+          <motion.div whileHover={{ scale: 1.05 }} className="parent">
+            <div className="card">
+              <div className="glass"></div>
+              <div className="content">
+                <Share2 className="h-12 w-12 text-[#0f41ea] mb-4" />
+                <h3 className="title">Gestão de Mídias Sociais</h3>
+                <p className="text">
+                  Campanhas inovadoras para impulsionar sua presença online.
+                </p>
+              </div>
+            </div>
+          </motion.div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Testimonials */}
       <section className="py-20 bg-[#040404]">
