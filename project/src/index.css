@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .logo_monaco{
     width: 50px;
     height: 50px;
@@ -11,7 +12,7 @@
 
 
 .btn_hero {
-    --color1: #111ece;
+    --color1: #0ba2bd;
     --color2: #111ece;
     perspective: 1000px;
     padding: 1em 1em;
@@ -27,6 +28,8 @@
     transform: rotateX(70deg) rotateZ(30deg);
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    border-radius: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   
   .btn_hero::before {
@@ -39,6 +42,7 @@
     right: 0;
     transform: rotateX(90deg);
     transform-origin: bottom;
+    border-radius: 5px;
   }
   
   .btn_hero::after {
@@ -51,10 +55,12 @@
     right: 0;
     transform: rotateY(-90deg);
     transform-origin: right;
+    border-radius: 5px;
   }
   
   .btn_hero:hover {
     transform: rotateX(30deg) rotateZ(0);
+    border-radius: 5px;
   }
   
 
